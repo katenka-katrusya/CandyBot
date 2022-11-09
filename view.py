@@ -61,7 +61,7 @@ async def bot_takes_candy(message: types.Message):
     await bot.send_message(message.from_user.id, f'Я беру {model.count} конфет. Осталось {model.total_count}')
 
 async def bot_winner(message: types.Message):
-    await bot.send_message(message.from_user.id, f'Я беру {model.total_count} конфет и я победил!')
+    await bot.send_message(message.from_user.id, f'Я беру {model.total_count} конфеток и я победил!')
 
 async def chel_winner(message: types.Message):
     await bot.send_message(message.from_user.id, f'Поздравляю,{message.from_user.first_name}, ты победитель!')
